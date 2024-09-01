@@ -57,33 +57,6 @@
   }
   ```
 
-## 프로젝트 구조
-
-.microservices/
-├── eureka-server/
-│   └── src/
-│       └── main/
-│           ├── java/
-│           └── resources/
-├── api-gateway/
-│   └── src/
-│       └── main/
-│           ├── java/
-│           └── resources/
-├── order-service/
-│   └── src/
-│       └── main/
-│           ├── java/
-│           └── resources/
-├── notification-service/
-│   └── src/
-│       └── main/
-│           ├── java/
-│           └── resources/
-└── docker-compose.yml
-
-각 서비스는 독립적인 Spring Boot 애플리케이션입니다.
-
 ## 향후 개선 사항
 
 - 보안 기능 추가 (예: OAuth2, JWT)
