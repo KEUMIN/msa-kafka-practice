@@ -20,7 +20,7 @@ public class OrderService {
         savedOrder.setId(System.currentTimeMillis());  // 임시 ID 생성
 
         // Kafka로 메시지 전송 배울 것
-        kafkaTemplate.send("order-created-topic", "New order created for user: " + order.getUserId());
+        kafkaTemplate.send("inventory-check", "New order created for user: " + order.getUserId());
 
         return savedOrder;
     }
